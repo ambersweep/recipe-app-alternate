@@ -11,10 +11,10 @@ export default function RecipeItem({
   return (
     <tr>
       <td className="content_td">
-        <p>{name}</p>
+        <p className="largerFont">{name}</p>
       </td>
       <td className="content_td">
-        <p>{cuisine}</p>
+        <p className="largerFont">{cuisine}</p>
       </td>
       <td className="content-td">
         <img className="scale-down" src={photo} />
