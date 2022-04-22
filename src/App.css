@@ -1,78 +1,61 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 .App {
   padding: 1em;
 }
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1495461199391-8c39ab674295?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8");
-  background-position:center;
-  background-size:cover;
-}
-label {
-  display: inline-block;
-  width: 100px;
+  background-color: #648b65;
 }
 
 /* typography */
 
 header {
-  font-family: "Playfair Display SC";
   text-align: center;
   font-size: 40px;
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 4px black;
-}
-
-
-html {
-  font-family: 'helvetica neue', sans-serif;
 }
 
 thead th, tfoot th {
-  font-family: 'Rock Salt';
-}
-
-th {
-  letter-spacing: 2px;
-  padding: 10px;
-  font-family: "Playfair Display SC";
-  width:fit-content;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
 }
 
 td {
-  letter-spacing: 1px;
   overflow-x:hidden;
   overflow-y:hidden;
-  font-family: 'Rock Salt';
   font-size: 15px;
   padding: 10px;
   text-align: center;
-  font-weight: bold;
+  text-align: center;
 }
 tr {
   font-size: 20px;
-  background-color: #ffffffce;
+  background-color: #e9ecef;
 }
 /* table */
-br {
-  color:rgba(0, 0, 0, 0.1)
-}
+
 table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   overflow:hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* custom classes */
 
 .content_td p {
   max-width: 100%;
-  max-height: 100px;
+  max-height: 120px;
   overflow-y: auto;
   text-overflow: ellipsis;
+}
+
+.title{
+  font-size:20px;
+}
+
+.icon-color{
+  color: #648b65
 }
 
 .scale-down{
@@ -80,44 +63,3 @@ table {
   width: 100%;
   height:100%;
 }
-
-.button-delete {
-  background-color: rgb(184, 51, 51);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  border-radius: 3px;
-  cursor: pointer
-}
-.button-delete:hover {
-  background-color: rgb(170, 0, 0)
-}
-
-.button-create {
-  background-color: rgb(74, 153, 74); 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  border-radius: 3px;
-  cursor:pointer
-}
-.button-create:hover {
-  background-color: green
-}
-
-.largerFont{
-  font-size: 18px;
-}
-
-/* Column Size for thead */
-
-
-/* Column size for tbody */

@@ -10,11 +10,11 @@ export default function RecipeItem({
 }) {
   return (
     <tr>
-      <td className="content_td">
-        <p className="largerFont">{name}</p>
+      <td className="content_td title">
+        <p className="">{name}</p>
       </td>
-      <td className="content_td">
-        <p className="largerFont">{cuisine}</p>
+      <td className="content_td title">
+        <p className="">{cuisine}</p>
       </td>
       <td className="content-td">
         <img className="scale-down" src={photo} />
@@ -26,7 +26,7 @@ export default function RecipeItem({
         <p>{preparation}</p>
       </td>
       <td>
-        <button className="button-delete" name="delete" type="delete" onClick={deleteRecipe}>
+        <button className="btn btn-secondary" name="delete" type="delete" onClick={deleteRecipe}>
           Delete
         </button>
       </td>

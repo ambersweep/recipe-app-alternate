@@ -7,8 +7,8 @@ function RecipeList({ recipes, deleteRecipe }) {
   // TODO: Each recipe row must have a delete button - <button name="delete">Delete</button> - that deletes the post when clicked
 
   return (
-    <div className="recipe-list">
-      <table>
+    <div className="table table-responsive">
+      <table className="table table-striped">
         <thead>
           <tr>
             <th>Name</th>

@@ -10,15 +10,19 @@ function App() {
     setRecipes((currentRecipes) =>
       currentRecipes.filter((recipe, index) => index !== indexToDelete)
     );
-  // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
-  // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
+ 
   const createRecipes = (newRecipe) =>
     setRecipes((currentRecipes) => [...currentRecipes, newRecipe]);
 
   return (
     <div className="App">
       <header>
-        <h1>Delicious Food Recipes</h1>
+      <div class="jumbotron jumbotron-fluid">
+  <div className="container">
+    <h1 className="display-4"><i className="uil uil-utensils-alt icon-color"></i> Delicious Recipes</h1>
+    <p className="lead">Track your favorites!</p>
+  </div>
+</div>
       </header>
       <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
       <RecipeCreate createRecipes={createRecipes} />

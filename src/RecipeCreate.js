@@ -29,17 +29,18 @@ function RecipeCreate({ createRecipes }) {
 
   return (
     <form name="create" onSubmit={handleSubmit}>
-      <table>
+      <table className="table">
         <tbody>
           <tr>
             <td>
               <input
                 id="content"
                 name="name"
+                className='form-control'
                 type="text"
                 required={true}
                 onChange={handleChange}
-                placeholder="Name"
+                placeholder="Name..."
                 value={formData.name}
               />
             </td>
@@ -47,10 +48,11 @@ function RecipeCreate({ createRecipes }) {
               <input
                 id="content"
                 name="cuisine"
+                className='form-control'
                 type="text"
                 required={true}
                 onChange={handleChange}
-                placeholder="Cuisine"
+                placeholder="Cuisine..."
                 value={formData.cuisine}
               />
             </td>
@@ -58,10 +60,11 @@ function RecipeCreate({ createRecipes }) {
               <input
                 id="content"
                 name="photo"
+                className='form-control'
                 type="url"
                 required={true}
                 onChange={handleChange}
-                placeholder="URL"
+                placeholder="Image URL..."
                 value={formData.photo}
               />
             </td>
@@ -69,10 +72,11 @@ function RecipeCreate({ createRecipes }) {
               <textarea
                 id="content"
                 name="ingredients"
+                className='form-control'
                 type="text"
                 required={true}
                 onChange={handleChange}
-                placeholder="Ingredients"
+                placeholder="Ingredients..."
                 value={formData.ingredients}
               />
             </td>
@@ -80,15 +84,16 @@ function RecipeCreate({ createRecipes }) {
               <textarea
                 id="content"
                 name="preparation"
+                className='form-control'
                 type="text"
                 required={true}
                 onChange={handleChange}
-                placeholder="Preparation"
+                placeholder="Preparation..."
                 value={formData.preparation}
               />
             </td>
             <td>
-              <button className="button-create" type="submit">Create</button>
+              <button className="btn btn-primary" type="submit">Create <i class="uil uil-plus"></i></button>
             </td>
           </tr>
         </tbody>
